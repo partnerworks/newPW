@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <path d="M 95 180 L 40 180 C 25 180 15 170 15 155 L 15 45 C 15 30 25 20 40 20 L 160 20 C 175 20 185 30 185 45 L 185 80" fill="none" stroke="#8cbabf" stroke-width="18" />
+  <path d="M 115 180 L 160 180 C 175 180 185 170 185 155 L 185 110" fill="none" stroke="#4a8538" stroke-width="18" />
+  <circle cx="165" cy="50" r="30" fill="#231f20" />
+  <text x="165" y="56" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">ISC2</text>
+  <text x="95" y="115" font-family="Arial, sans-serif" font-size="44" fill="#000000" text-anchor="middle" font-weight="900" letter-spacing="1">CISSP</text>
+  <text x="155" y="115" font-family="Arial, sans-serif" font-size="14" fill="#000000" text-anchor="start" font-weight="bold">®</text>
+</svg>

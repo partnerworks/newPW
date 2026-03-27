@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="hexClip">
+      <polygon points="50,15 150,15 190,100 150,185 50,185 10,100" />
+    </clipPath>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9b1c2c" />
+      <stop offset="100%" stop-color="#7a1220" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <polygon points="50,15 150,15 190,100 150,185 50,185 10,100" fill="white" stroke="#9b1c2c" stroke-width="12" stroke-linejoin="round" />
+  
+  <!-- Middle Banner -->
+  <rect x="0" y="75" width="200" height="55" fill="url(#redGrad)" clip-path="url(#hexClip)" />
+  
+  <!-- PECB Text -->
+  <text x="100" y="60" font-family="Arial, sans-serif" font-size="42" fill="#9b1c2c" text-anchor="middle" font-weight="bold" letter-spacing="2">PECB</text>
+  
+  <!-- ISO Text -->
+  <text x="100" y="102" font-family="Arial, sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="bold">ISO/IEC 42001</text>
+  <text x="100" y="120" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="normal">Lead Implementer</text>
+  
+  <!-- Checkmark Circle -->
+  <circle cx="100" cy="155" r="16" fill="none" stroke="#9b1c2c" stroke-width="3" />
+  <path d="M 92 155 L 98 161 L 110 149" fill="none" stroke="#9b1c2c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
