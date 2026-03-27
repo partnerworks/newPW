@@ -51,14 +51,14 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-surface border border-surface-dark text-xs font-medium text-ink/70 mb-8 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-              Cybersecurity Compliance Experts
+              ISO 27001 & ISO 42001 Certified Practitioners
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1] mb-6">
-              Compliance as a <br className="hidden md:block" />
-              <span className="text-ink/50">business advantage.</span>
+              AI governance is <br className="hidden md:block" />
+              <span className="text-ink/50">no longer optional.</span>
             </h1>
             <p className="text-base md:text-lg text-ink/70 max-w-xl mb-10 leading-relaxed">
-              Expert guidance for ISO 27001 and ISO 42001 certification. We build robust, scalable security frameworks tailored for modern UK businesses, turning compliance from a hurdle into a growth driver.
+              The EU AI Act enforcement deadline hits August 2026. If your business develops, deploys, or uses AI systems, you need a certified management framework in place. PartnerWorks builds and implements ISO 42001 and ISO 27001 management systems alongside your team, typically reaching certification readiness in 6 to 12 weeks.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a
