@@ -21,7 +21,7 @@ export default function Home() {
   }, [location]);
 
   return (
-    <main className="flex-grow pt-16">
+    <div className="flex-grow">
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden bg-paper">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#FBB531_0%,_transparent_25%),radial-gradient(circle_at_bottom_left,_#60B9D9_0%,_transparent_25%),radial-gradient(circle_at_bottom_right,_#C48DB9_0%,_transparent_25%)] opacity-15" />
@@ -341,6 +341,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

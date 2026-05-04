@@ -20,9 +20,9 @@ export default function App() {
 
   return (
     <Router>
-      <div className="min-h-screen flex flex-col font-sans text-ink bg-paper selection:bg-gold/30">
+      <div className="min-h-screen w-full flex flex-col font-sans text-ink bg-paper selection:bg-gold/30 overflow-x-hidden">
         {/* Navigation */}
-        <header className="fixed top-0 w-full z-50 bg-paper/90 backdrop-blur-md border-b border-surface-dark/50">
+        <header className="fixed top-0 left-0 w-full z-50 bg-paper/90 backdrop-blur-md border-b border-surface-dark/50">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2">
               <img src="/logo.svg" alt="Partnerworks Logo" className="h-7 md:h-8 object-contain" />
@@ -80,15 +80,17 @@ export default function App() {
           )}
         </header>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/iso-42001-guide" element={<Iso42001Guide />} />
-          <Route path="/iso-27001-guide" element={<Iso27001Guide />} />
-          <Route path="/cyber-essentials-guide" element={<CyberEssentialsGuide />} />
-        </Routes>
+        <main className="flex-grow w-full">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/iso-42001-guide" element={<Iso42001Guide />} />
+            <Route path="/iso-27001-guide" element={<Iso27001Guide />} />
+            <Route path="/cyber-essentials-guide" element={<CyberEssentialsGuide />} />
+          </Routes>
+        </main>
 
         {/* Footer */}
-        <footer className="bg-ink text-paper py-16 border-t border-surface-dark/20">
+        <footer className="w-full bg-ink text-paper py-16 border-t border-surface-dark/20">
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
             <div className="flex flex-col gap-6">
               <img src="/logo-white.svg" alt="Partnerworks Logo" className="h-6 md:h-7 object-contain self-start" />

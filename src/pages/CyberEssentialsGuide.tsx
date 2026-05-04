@@ -10,7 +10,7 @@ export default function CyberEssentialsGuide() {
   }, []);
 
   return (
-    <main className="flex-grow pt-24 pb-32 bg-paper">
+    <div className="flex-grow pt-24 pb-32 bg-paper">
       <article className="max-w-4xl mx-auto px-6">
         <Link to="/#insights" className="inline-flex items-center gap-2 text-sm font-medium text-ink/60 hover:text-ink transition-colors mb-12">
           <ArrowLeft className="w-4 h-4" />
@@ -479,6 +479,6 @@ export default function CyberEssentialsGuide() {
           </p>
         </div>
       </article>
-    </main>
+    </div>
   );
 }
