@@ -23,65 +23,74 @@ export default function Home() {
   return (
     <div className="flex-grow">
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 overflow-hidden bg-paper">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#FBB531_0%,_transparent_25%),radial-gradient(circle_at_bottom_left,_#60B9D9_0%,_transparent_25%),radial-gradient(circle_at_bottom_right,_#C48DB9_0%,_transparent_25%)] opacity-15" />
+      <section className="relative pt-12 md:pt-16 bg-paper overflow-hidden">
+        {/* Background Gradients - Full Width */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#FBB531_0%,_transparent_15%),radial-gradient(circle_at_bottom_left,_#60B9D9_0%,_transparent_15%),radial-gradient(circle_at_bottom_right,_#C48DB9_0%,_transparent_15%)] opacity-20" />
         
-        {/* Faded Background Image */}
-        <div 
-          className="absolute top-0 right-0 w-full md:w-[55%] h-full opacity-20 md:opacity-40 pointer-events-none" 
-          style={{ 
-            maskImage: 'linear-gradient(to left, black 30%, transparent 100%)', 
-            WebkitMaskImage: '-webkit-linear-gradient(right, black 30%, transparent 100%)' 
-          }}
-        >
-          <img
-            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
-            alt="Smiling professional woman in office"
-            className="w-full h-full object-cover object-center"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="max-w-3xl"
-          >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-surface border border-surface-dark text-xs font-medium text-ink/70 mb-8 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-              ISO 27001 & ISO 42001 Certified Practitioners
-            </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1] mb-6">
-              AI governance is <br className="hidden md:block" />
-              <span className="text-ink/50">no longer optional.</span>
-            </h1>
-            <p className="text-base md:text-lg text-ink/70 max-w-xl mb-10 leading-relaxed">
-              The EU AI Act enforcement deadline hits August 2026. If your business develops, deploys, or uses AI systems, you need a certified management framework in place. PartnerWorks builds and implements ISO 42001 and ISO 27001 management systems alongside your team, typically reaching certification readiness in 6 to 12 weeks.
-            </p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <a
-                href="https://calendly.com/chrishyatt/45min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-gold text-ink px-6 py-3 rounded-md text-sm font-semibold hover:bg-gold/90 transition-all group shadow-md"
-              >
-                Schedule a Discovery Call
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md text-sm font-medium text-ink/70 hover:bg-surface transition-colors"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-8 md:py-12 lg:py-16">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="relative z-10 py-4"
+            >
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-surface border border-surface-dark text-xs font-medium text-ink/70 mb-8 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
+                ISO 27001 & ISO 42001 Certified Practitioners
+              </div>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1] mb-6">
+                AI governance is <br className="hidden md:block" />
+                <span className="text-ink/50">no longer optional.</span>
+              </h1>
+              <p className="text-base md:text-lg text-ink/70 max-w-xl mb-10 leading-relaxed">
+                The EU AI Act enforcement deadline hits August 2026. If your business develops, deploys, or uses AI systems, you need a certified management framework in place. PartnerWorks builds and implements ISO 42001 and ISO 27001 management systems alongside your team, typically reaching certification readiness in 6 to 12 weeks.
+              </p>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <a
+                  href="https://calendly.com/chrishyatt/45min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gold text-ink px-6 py-3 rounded-md text-sm font-semibold hover:bg-gold/90 transition-all group shadow-md"
+                >
+                  Schedule a Discovery Call
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+                <a
+                  href="#services"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md text-sm font-medium text-ink/70 hover:bg-surface transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  Explore our services
+                </a>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="relative aspect-[4/3] md:aspect-video lg:aspect-square lg:max-h-[500px]"
+            >
+              <div 
+                className="w-full h-full pointer-events-none" 
+                style={{ 
+                  maskImage: 'radial-gradient(circle at center, black 40%, transparent 90%)', 
+                  WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 90%)' 
                 }}
               >
-                Explore our services
-              </a>
-            </div>
-          </motion.div>
+                <img
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
+                  alt="Smiling professional woman in office"
+                  className="w-full h-full object-cover object-[center_top]"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
